@@ -24,7 +24,7 @@ Background:
     And I click on one of the cats
     Then My balance updates accordingly in case i win or i loose  
     
-        Examples: 
+    Examples: 
       | value  	| 
       | 5 			| 
       | 10		  |
