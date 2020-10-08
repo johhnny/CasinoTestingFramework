@@ -16,7 +16,9 @@ Steps to run:
 2. Open the project in Katalon.
 3. Go to Test Suites folder, and from there please run either the testsuite or the testsuite collection (to run the testsuite on multiple browsers)
 4. You can check the progress of the run by looking at the Log Viewer (see steps passed or fail) or Console (display the console messages) from the bottom of Katalon window
-5. For the reporting, on the testsuite or testsuite collection that you run, please switch to Result tab
- 
+5. For the reporting:
+	a. On Katalon, on the testsuite or testsuite collection that you run, please switch to Result tab
+	b. Report file can also be found on the HDD, in the Report folder. Here there are the folders containing the reports of the runs. The folder name is in the format <date>_<time> of when the running was triggered.
+	
 
 
