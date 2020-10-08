@@ -37,14 +37,11 @@ public class Utils {
 		String myEmailAddress = "x_" + System.nanoTime() + "@x.com";
 		return myEmailAddress;
 	}
-	
+
 	@Keyword
-	static def closeAllNotifications ()
-	{
-		while (WebUI.waitForElementClickable(findTestObject('Object Repository/Homepage/NotificationForm/button_close_notification'), 5) == true)
-		{
+	static def closeAllNotifications () {
+		while (WebUI.waitForElementClickable(findTestObject('Object Repository/Homepage/NotificationForm/button_close_notification'), 5) == true) {
 			WebUI.click(findTestObject('Object Repository/Homepage/NotificationForm/button_close_notification'))
 		}
 	}
-	
 }
