@@ -10,7 +10,7 @@ Background:
     When I select Casino menu entry
     And I set the Bet value to <value>
     And I click on one of the cats
-    Then My balance updates accordingly in case i win or i loose 
+    Then My balance updates accordingly in case I win or I loose 
 
     Examples: 
       | value  	| 
@@ -22,7 +22,7 @@ Background:
     When I select Casino menu entry
     And I set the Bet value to <value>
     And I click on one of the cats
-    Then My balance updates accordingly in case i win or i loose  
+    Then My balance updates accordingly in case I win or I loose  
     
     Examples: 
       | value  	| 

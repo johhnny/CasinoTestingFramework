@@ -12,11 +12,11 @@ Background:
     And I select the desired deposit amount <value>
     And I click on Deposit Approved button   
     Then The confirmation <message> is displayed
-    And The <notification message> is showed
+    And The <notification_message> is showed
     And The amount is added to the account balance
 
     Examples: 
-      | deposit_method | value  	|  message 											| notification message																		|
+      | deposit_method | value  	|  message 											| notification_message																		|
       | Card 					 | 10 			| Your deposit was successful!	| Your deposit of €10 has been credited to your account.	|
       | Direct Bank		 | 10 			| Your deposit was successful!	| Your deposit of €10 has been credited to your account.	|
       | E-wallet			 | 10 			| Your deposit was successful!	| Your deposit of €10 has been credited to your account.	|
@@ -29,11 +29,11 @@ Background:
     And I select the desired deposit amount <value>
     And I click on Deposit Approved button   
     Then The confirmation <message> is displayed
-    And The <notification message> is showed
+    And The <notification_message> is showed
     And The amount is added to the account balance
 
     Examples: 
-      | deposit_method | value  	|  message 											| notification message																		|
+      | deposit_method | value  	|  message 											| notification_message																		|
       | Card 					 | 10 			| Your deposit was successful!	| Your deposit of €10 has been credited to your account.	|
       | Card					 | 50 			| Your deposit was successful!	| Your deposit of €50 has been credited to your account.	|
       | Card 					 | 100			| Your deposit was successful!	| Your deposit of €100 has been credited to your account.	|

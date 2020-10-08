@@ -43,6 +43,7 @@ import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 
 
 class PlayLotterySteps {
@@ -58,17 +59,21 @@ class PlayLotterySteps {
 		WebUI.verifyElementVisible(findTestObject('Object Repository/LotteryPage/lottery_frame'))
 
 		initial_balance = WebUI.getText(findTestObject('Object Repository/Homepage/button_balance'))
+		println "Initial balance :" + initial_balance
 	}
 
 	@And ("I select to participate in (.*) draws")
-	def tt1(String number_of_draws) {
+	def selectNumberOfDraws(String number_of_draws) {
 
-		WebUI.selectOptionByValue(findTestObject('Object Repository/LotteryPage/select_number_of_draws'), number_of_draws, true)
+		TestObject select_draws_element = findTestObject('Object Repository/LotteryPage/select_number_of_draws')
+		WebUI.selectOptionByValue(select_draws_element, number_of_draws, true)
 
-		Select select = new Select(DriverFactory.getWebDriver().findElement(By.cssSelector("div.betting-module select")))
+		//get the lottery amount
+		Select select = new Select(WebUiCommonHelper.findWebElement(select_draws_element, 30))
 		String optionLabel = select.getFirstSelectedOption().getText()
-
 		lottery_amount = optionLabel.substring(optionLabel.indexOf("€")+1, optionLabel.indexOf(")"))
+		println "Lottery amount:" + lottery_amount
+		
 	}
 
 	@And ("I click on BUY TICKETS button")

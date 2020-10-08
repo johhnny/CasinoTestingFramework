@@ -27,7 +27,9 @@ Steps to run:
 2. Open Katalon Studio.
 3. Clone the following project from github: https://github.com/johhnny/CasinoTestingFramework.git
 4. Make sure you have the latest webdrivers (go to Tools menu -> Update WebDrivers) and latest browser version.
-5. Go to Test Suites folder, and from there please run either the testsuite or the testsuite collection (to run the testsuite on multiple browsers)
+5. To run the tests:
+	a. To run either one of the testsuite (Smoke_tests_testsuite or Regression_tests_testsuite) please open it first and then click on the Run button (from the toolbox menu)
+	b. To run either one of the testsuite collection (Smoke_tests_all_browsers or Regression_tests_all_browsers) please open it first and then click on the Execute button.
 6. You can check the progress of the run by looking at the Log Viewer (see steps passed or fail) or Console (display the console messages) from the bottom of Katalon window
 7. For the reporting:
 	a. On Katalon, on the testsuite or testsuite collection that you run, please switch to Result tab

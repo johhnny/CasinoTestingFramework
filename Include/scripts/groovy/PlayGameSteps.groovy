@@ -73,7 +73,7 @@ class PlayGameSteps {
 	}
 
 
-	@Then ("My balance updates accordingly in case i win or i loose")
+	@Then ("My balance updates accordingly in case I win or I loose")
 	def checkBalance() {
 
 		String actual_balance_txt = WebUI.getText(findTestObject('Object Repository/Homepage/button_balance'))
@@ -90,6 +90,4 @@ class PlayGameSteps {
 
 		WebUI.verifyMatch(actual_balance_txt, expected_balance_txt, false, FailureHandling.STOP_ON_FAILURE )
 	}
-
-	
 }
