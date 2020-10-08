@@ -68,7 +68,7 @@ class PlayLotterySteps {
 		Select select = new Select(DriverFactory.getWebDriver().findElement(By.cssSelector("div.betting-module select")))
 		String optionLabel = select.getFirstSelectedOption().getText()
 
-		lottery_amount = optionLabel.substring(optionLabel.indexOf("(")+1, optionLabel.indexOf(")")).replace("€" , "")
+		lottery_amount = optionLabel.substring(optionLabel.indexOf("€")+1, optionLabel.indexOf(")"))
 	}
 
 	@And ("I click on BUY TICKETS button")
